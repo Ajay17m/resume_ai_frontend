@@ -59,7 +59,7 @@ askQuestionBtn.addEventListener('click', async () => {
 // Event Listener for Generate Summary Button
 generateSummaryBtn.addEventListener('click', async () => {
     // For the summarizer, no input is needed as we bound the documents in app.py
-    const summary = await callApi("/summarize/invoke", {input:{}}); 
+    const summary = await callApi("/summarize/invoke", { input: {} }); 
     summaryResponseDiv.innerText = summary;
 });
 
